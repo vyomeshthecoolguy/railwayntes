@@ -1,0 +1,19 @@
+station_order,station_code,station_name,distance_km
+1,MSB,Chennai Beach,0
+2,MSF,Chennai Fort,2
+3,MPK,Chennai Park,3
+4,MS,Chennai Egmore,4
+5,MSC,Chennai Chetpat,6
+6,NBK,Nungambakkam,8
+7,MKK,Kodambakam,9
+8,MBM,Mambalam,11
+9,SP,Saidapet,13
+10,GDY,Guindy,15
+11,STM,St Thomas Mount,17
+12,PZA,Palavanthangal,18
+13,MN,Minambakkam,20
+14,TLM,Tirusulam,22
+15,PV,Pallavaram,23
+16,CMP,Chromepet,25
+17,TBMS,Tambaram Sntrm,28
+18,TBM,Tambaram,29

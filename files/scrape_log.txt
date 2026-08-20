@@ -1,0 +1,192 @@
+Fetching train 40003 ...
+  [WARN] Unexpected response for train 40003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40045 ...
+  [WARN] Unexpected response for train 40045: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40046 ...
+  [WARN] Unexpected response for train 40046: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40111 ...
+  [WARN] Unexpected response for train 40111: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40149 ...
+  [WARN] Unexpected response for train 40149: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40394 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '40394', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+Fetching train 49003 ...
+  [WARN] Unexpected response for train 49003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 49004 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '49004', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+
+Saved 36 new rows. raw_data.csv now has 144 total rows.
+Fetching train 40003 ...
+  [WARN] Unexpected response for train 40003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40045 ...
+  [WARN] Unexpected response for train 40045: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40046 ...
+  [WARN] Unexpected response for train 40046: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40111 ...
+  [WARN] Unexpected response for train 40111: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40149 ...
+  [WARN] Unexpected response for train 40149: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40394 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '40394', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+Fetching train 49003 ...
+  [WARN] Unexpected response for train 49003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 49004 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '49004', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+Traceback (most recent call last):
+  File "C:\Users\me\Downloads\files\08_scrape_ntes_client.py", line 158, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\me\Downloads\files\08_scrape_ntes_client.py", line 153, in main
+    combined.to_csv(OUTPUT_FILE, index=False)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\me\AppData\Roaming\Python\Python313\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\me\AppData\Roaming\Python\Python313\site-packages\pandas\core\generic.py", line 3989, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        path_or_buf,
+        ^^^^^^^^^^^^
+    ...<14 lines>...
+        storage_options=storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\me\AppData\Roaming\Python\Python313\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\me\AppData\Roaming\Python\Python313\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ~~~~~~~~~~^
+        self.filepath_or_buffer,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        storage_options=self.storage_options,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as handles:
+    ^
+  File "C:\Users\me\AppData\Roaming\Python\Python313\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+PermissionError: [Errno 13] Permission denied: 'raw_data.csv'
+Fetching train 40003 ...
+  [WARN] Unexpected response for train 40003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40045 ...
+  [WARN] Unexpected response for train 40045: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40046 ...
+  [WARN] Unexpected response for train 40046: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40111 ...
+  [WARN] Unexpected response for train 40111: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40149 ...
+  [WARN] Unexpected response for train 40149: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40394 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '40394', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+Fetching train 49003 ...
+  [WARN] Unexpected response for train 49003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 49004 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '49004', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+
+Saved 36 new rows. raw_data.csv now has 144 total rows.
+Fetching train 40003 ...
+  [WARN] Unexpected response for train 40003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40045 ...
+  [WARN] Unexpected response for train 40045: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40046 ...
+  [WARN] Unexpected response for train 40046: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40111 ...
+  [WARN] Unexpected response for train 40111: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40149 ...
+  [WARN] Unexpected response for train 40149: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40394 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '40394', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+Fetching train 49003 ...
+  [WARN] Unexpected response for train 49003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 49004 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '49004', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+
+Saved 36 new rows. raw_data.csv now has 144 total rows.
+Fetching train 40003 ...
+  [WARN] Unexpected response for train 40003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40045 ...
+  [WARN] Unexpected response for train 40045: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40046 ...
+  [WARN] Unexpected response for train 40046: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40111 ...
+  [WARN] Unexpected response for train 40111: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40149 ...
+  [WARN] Unexpected response for train 40149: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40394 ...
+  [WARN] Unexpected response for train 40394: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 49003 ...
+  [WARN] Unexpected response for train 49003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 49004 ...
+  [WARN] Unexpected response for train 49004: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+No data collected today. Nothing saved.
+Fetching train 40003 ...
+  [WARN] Unexpected response for train 40003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40045 ...
+  [WARN] Unexpected response for train 40045: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40046 ...
+  [WARN] Unexpected response for train 40046: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40111 ...
+  [WARN] Unexpected response for train 40111: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40149 ...
+  [WARN] Unexpected response for train 40149: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 40394 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '40394', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+Fetching train 49003 ...
+  [WARN] Unexpected response for train 49003: {'SchType': 'PTT', 'AlertMsgHindi': '', 'AlertMsg': ''}
+  -> 0 of 0 stations have delay data
+Fetching train 49004 ...
+  -> 18 of 18 stations have delay data
+  sample: {'date': '2026-08-09', 'train_id': '49004', 'station_name': 'TAMBARAM', 'station_order': 1, 'distance_km': 0, 'scheduled_arrival': None, 'actual_arrival': None, 'delay_minutes': 0.0}
+
+Saved 36 new rows. raw_data.csv now has 144 total rows.
