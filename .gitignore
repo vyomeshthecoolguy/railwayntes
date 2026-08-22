@@ -1,0 +1,5 @@
+*.csv
+scrape_log.txt
+merged_backups/
+__pycache__/
+*.pyc
